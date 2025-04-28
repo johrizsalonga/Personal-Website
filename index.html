@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/jh.png" type="image/icon">
+  <title>Johriz Hub</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: black;
+      color: white;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #111;
+      padding: 15px 0;
+    }
+
+    nav .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffa500;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #ffb74d;
+    }
+
+    .hero h2 {
+      font-size: 72px;
+      margin: 10px 0;
+    }
+
+    .hero .highlight {
+      color: #ffa500;
+    }
+
+    .hero .role {
+      background: #ffa500;
+      color: black;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .hero .description {
+      font-size: 16px;
+    }
+
+    .profile-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .profile-img img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 4px solid #ffa500;
+      object-fit: cover;
+    }
+
+    .about,
+    .car,
+    .contact {
+      background: #1a1a1a;
+      border-radius: 10px;
+      padding: 40px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .about h1,
+    .car h1,
+    .contact h1 {
+      color: #ffa500;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .about img,
+    .car img,
+    .contact .socials {
+      margin: 20px auto;
+      display: block;
+    }
+
+    .about img {
+      max-width: 100%;
+      border-radius: 15px;
+    }
+
+    .car img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 20px;
+    }
+
+    .contact a {
+      color: #ffb74d;
+      text-decoration: none;
+    }
+
+    .contact .socials img {
+      width: 40px;
+      margin: 0 10px;
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      background: #ffa500;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      opacity: 1;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 48px;
+      }
+
+      .profile-img img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="top">
+    <div class="container">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#car">Dream Car</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="section hero" id="home">
+      <div class="hero-text">
+        <h1>HI THERE!!</h1>
+        <h2>I'm <span class="highlight">Johriz</span></h2>
+        <p class="role">Web Developer</p>
+        <p class="description">
+          A web developer is a professional who creates and maintains websites and web applications using languages like HTML, CSS, and JavaScript. They ensure that websites are visually appealing, responsive, and function smoothly across different devices.
+        </p>
+      </div>
+      <div class="profile-img">
+        <img src="images/me.jpg" alt="Johriz Profile">
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <h1>ABOUT ME</h1>
+      <p>
+        I have a keen eye for detail and a strong problem-solving ability. I enjoy taking on complex challenges and finding creative solutions to them. I am also a team player and believe that collaboration is key to success in software development.
+      </p>
+      <img src="images/about.jpg" alt="About Me">
+    </section>
+
+    <section class="section car" id="car">
+      <h1>DREAM CAR</h1>
+      <img src="images/car.jpg" alt="Dream Car">
+      <p>
+        Faster than fast, quicker than quick. I am Speed. and Float like a Cadillac, sting like a Beemer. "KA-CHOW!"
+      </p>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h1>CONTACT</h1>
+      <p>Email me at <a href="mailto:johrizsalonga@gmail.com">johrizsalonga@gmail.com</a></p>
+      <div class="socials">
+        <a href="https://www.facebook.com/jhrz.salonga" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/jhrz.slga/" target="_blank">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/johrizsalonga" target="_blank">
+          <img src="https://p7.hiclipart.com/preview/593/30/489/github-computer-icons-commit-repository-github.jpg" alt="Github">
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <a href="#top" class="back-to-top">Back to Top</a>
+</body>
+</html>
